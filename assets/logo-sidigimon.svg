@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Cyan & Blue Neon Glow Gradients -->
+    <linearGradient id="neonCyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#a5f3fc" />
+      <stop offset="55%" stop-color="#38bdf8" />
+      <stop offset="85%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <linearGradient id="deepBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="40%" stop-color="#1e3a8a" />
+      <stop offset="80%" stop-color="#0f2b5c" />
+      <stop offset="100%" stop-color="#081c3b" />
+    </linearGradient>
+
+    <linearGradient id="check3DBevel" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0369a1" />
+      <stop offset="35%" stop-color="#0284c7" />
+      <stop offset="70%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <linearGradient id="circuitCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.45" />
+      <stop offset="45%" stop-color="#0284c7" stop-opacity="0.25" />
+      <stop offset="80%" stop-color="#0284c7" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="cyanBloom" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur1" />
+      <feGaussianBlur stdDeviation="4" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0284c7" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- EMBLEM ROOT -->
+  <g transform="translate(0, -10)">
+
+    <!-- 1. SOFT CYAN NEON RADIANT AURA -->
+    <circle cx="400" cy="300" r="190" fill="url(#auraGlow)" />
+
+    <!-- 2. RHOMBUS / DIAMOND MICROCHIP BASE (Rotated 45deg) -->
+    <g filter="url(#cyanBloom)">
+      <!-- Outer Cyan Glow Diamond Frame -->
+      <polygon points="400,150 550,300 400,450 250,300" 
+               fill="#f0f9ff" fill-opacity="0.85" stroke="#38bdf8" stroke-width="4" />
+
+      <!-- Concentric Diamond Step 2 -->
+      <polygon points="400,172 528,300 400,428 272,300" 
+               fill="#ffffff" fill-opacity="0.9" stroke="#0284c7" stroke-width="2.5" />
+
+      <!-- Concentric Diamond Step 3 -->
+      <polygon points="400,195 505,300 400,405 295,300" 
+               fill="#f8fafc" fill-opacity="0.95" stroke="#38bdf8" stroke-width="2" />
+
+      <!-- Concentric Diamond Step 4 -->
+      <polygon points="400,218 482,300 400,382 318,300" 
+               fill="#ffffff" stroke="#0284c7" stroke-width="2" />
+
+      <!-- Concentric Diamond Step 5 (Inner Core) -->
+      <polygon points="400,242 458,300 400,358 342,300" 
+               fill="#f0f9ff" stroke="#38bdf8" stroke-width="1.8" />
+    </g>
+
+    <!-- 3. INTRICATE PCB CIRCUIT TRACES ON DIAMOND FACETS -->
+    <g stroke="url(#circuitCyan)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85">
+      <!-- Top Corner Circuitry -->
+      <path d="M 400,178 L 400,210" />
+      <path d="M 385,190 L 385,215 L 370,230" />
+      <path d="M 415,190 L 415,215 L 430,230" />
+      <circle cx="370" cy="230" r="3" fill="#0284c7" />
+      <circle cx="430" cy="230" r="3" fill="#0284c7" />
+
+      <!-- Left Corner Circuitry -->
+      <path d="M 278,300 L 310,300" />
+      <path d="M 290,285 L 315,285 L 330,270" />
+      <path d="M 290,315 L 315,315 L 330,330" />
+      <path d="M 305,270 L 325,270 L 340,255" />
+      <path d="M 305,330 L 325,330 L 340,345" />
+      <circle cx="330" cy="270" r="3" fill="#0284c7" />
+      <circle cx="330" cy="330" r="3" fill="#0284c7" />
+      <circle cx="340" cy="255" r="2.5" fill="#0284c7" />
+      <circle cx="340" cy="345" r="2.5" fill="#0284c7" />
+
+      <!-- Bottom Corner Circuitry -->
+      <path d="M 400,422 L 400,390" />
+      <path d="M 385,410 L 385,385 L 370,370" />
+      <path d="M 415,410 L 415,385 L 430,370" />
+      <circle cx="370" cy="370" r="3" fill="#0284c7" />
+      <circle cx="430" cy="370" r="3" fill="#0284c7" />
+
+      <!-- Right Corner Circuitry -->
+      <path d="M 522,300 L 490,300" />
+      <path d="M 510,285 L 485,285 L 470,270" />
+      <path d="M 510,315 L 485,315 L 470,330" />
+      <circle cx="470" cy="270" r="3" fill="#0284c7" />
+      <circle cx="470" cy="330" r="3" fill="#0284c7" />
+    </g>
+
+    <!-- Decorative Microchip Center Nodes -->
+    <g fill="#0284c7" opacity="0.65">
+      <circle cx="400" cy="270" r="3.5" />
+      <circle cx="400" cy="330" r="3.5" />
+      <circle cx="370" cy="300" r="3.5" />
+      <circle cx="430" cy="300" r="3.5" />
+    </g>
+
+    <!-- 4. 3D GLOWING CYANG/BLUE VERIFICATION CHECKMARK (TICK) -->
+    <!-- Soft Glow Under Checkmark -->
+    <g filter="url(#cyanBloom)">
+      <path d="M 330,295 L 398,368 L 532,185 L 512,175 L 395,335 L 348,285 Z" 
+            fill="#38bdf8" opacity="0.9" />
+    </g>
+
+    <!-- Main 3D Beveled Checkmark Body -->
+    <!-- Dark Inner Core Facet -->
+    <path d="M 330,295 L 398,368 L 535,180 L 515,170 L 395,335 L 348,285 Z" 
+          fill="url(#deepBlueGrad)" />
+
+    <!-- Top & Outer Electric Cyan Highlight Edge (3D Ridge) -->
+    <path d="M 330,295 L 398,368 L 545,160 L 535,180 L 395,340 L 348,285 Z" 
+          fill="url(#check3DBevel)" />
+
+    <!-- Trailing High-Tech Energy Spike over top-right edge -->
+    <g stroke="url(#neonCyanGrad)" stroke-width="2.5" stroke-linecap="round" fill="none">
+      <line x1="535" y1="175" x2="555" y2="148" />
+      <line x1="525" y1="185" x2="542" y2="162" />
+    </g>
+
+    <!-- Bright White Core Light Specular -->
+    <path d="M 338,292 L 398,360 L 538,168" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.95" />
+
+  </g>
+
+  <!-- 5. TYPOGRAPHY: SIDIGIMON & SUBTITLE -->
+  <g text-anchor="middle">
+    <!-- SIDIGIMON Bold Brand Name -->
+    <text x="400" y="580" 
+          font-family="'Outfit', 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" 
+          font-size="88" 
+          font-weight="900" 
+          fill="#1b4d7e" 
+          letter-spacing="5">
+      SIDIGIMON
+    </text>
+
+    <!-- Subtitle Line 1 -->
+    <text x="400" y="622" 
+          font-family="'Plus Jakarta Sans', Arial, sans-serif" 
+          font-size="14.5" 
+          font-weight="800" 
+          fill="#2b6cb0" 
+          letter-spacing="2.8">
+      SISTEM DIGITALISASI BUKTI PEMBAYARAN DAN MONITORING
+    </text>
+
+    <!-- Subtitle Line 2 -->
+    <text x="400" y="645" 
+          font-family="'Plus Jakarta Sans', Arial, sans-serif" 
+          font-size="14.5" 
+          font-weight="800" 
+          fill="#2b6cb0" 
+          letter-spacing="3.5">
+      PENERIMAAN
+    </text>
+  </g>
+</svg>

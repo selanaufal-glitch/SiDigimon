@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
+  <defs>
+    <linearGradient id="stpGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="stpGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="stpGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="stpGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Shield / Hexagon Frame -->
+  <polygon points="50,4 92,26 92,74 50,96 8,74 8,26" fill="#ffffff" stroke="#0f172a" stroke-width="3" stroke-linejoin="round" />
+  <!-- Inner Dynamic Tech Waves / Petals -->
+  <!-- Top Petal -->
+  <path d="M50,14 C62,26 66,40 50,50 C34,40 38,26 50,14 Z" fill="url(#stpGrad1)" />
+  <!-- Right Petal -->
+  <path d="M86,40 C74,52 60,56 50,50 C60,34 74,38 86,40 Z" fill="url(#stpGrad2)" />
+  <!-- Bottom-Right Petal -->
+  <path d="M72,82 C58,74 54,60 50,50 C66,50 72,68 72,82 Z" fill="url(#stpGrad3)" />
+  <!-- Bottom-Left Petal -->
+  <path d="M28,82 C28,68 34,50 50,50 C46,60 42,74 28,82 Z" fill="url(#stpGrad4)" />
+  <!-- Left Petal -->
+  <path d="M14,40 C26,38 40,34 50,50 C40,56 26,52 14,40 Z" fill="url(#stpGrad2)" />
+  <!-- Center Nucleus -->
+  <circle cx="50" cy="50" r="8" fill="#ffffff" stroke="#0f172a" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="4.5" fill="#0284c7" />
+  <!-- STP Text Arc or Badge -->
+  <path d="M24,78 Q50,90 76,78" fill="none" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+</svg>

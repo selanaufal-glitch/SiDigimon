@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <!-- EMBLEM SILHOUETTE ROOT -->
+  <g transform="translate(0, -10)">
+
+    <!-- 1. DIAMOND MICROCHIP CONCENTRIC STEPS -->
+    <g stroke="currentColor" fill="none">
+      <!-- Outer Diamond Frame -->
+      <polygon points="400,150 550,300 400,450 250,300" 
+               fill="currentColor" fill-opacity="0.08" stroke-width="6" opacity="0.9" />
+
+      <!-- Concentric Diamond Step 2 -->
+      <polygon points="400,172 528,300 400,428 272,300" 
+               stroke-width="3.5" opacity="0.8" />
+
+      <!-- Concentric Diamond Step 3 -->
+      <polygon points="400,195 505,300 400,405 295,300" 
+               stroke-width="3" opacity="0.75" />
+
+      <!-- Concentric Diamond Step 4 -->
+      <polygon points="400,218 482,300 400,382 318,300" 
+               stroke-width="2.5" opacity="0.7" />
+
+      <!-- Concentric Diamond Step 5 -->
+      <polygon points="400,242 458,300 400,358 342,300" 
+               stroke-width="2" opacity="0.65" />
+    </g>
+
+    <!-- 2. INTRICATE PCB CIRCUIT TRACES -->
+    <g stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85">
+      <!-- Top Corner Circuitry -->
+      <path d="M 400,178 L 400,210" />
+      <path d="M 385,190 L 385,215 L 370,230" />
+      <path d="M 415,190 L 415,215 L 430,230" />
+      <circle cx="370" cy="230" r="4" fill="currentColor" />
+      <circle cx="430" cy="230" r="4" fill="currentColor" />
+
+      <!-- Left Corner Circuitry -->
+      <path d="M 278,300 L 310,300" />
+      <path d="M 290,285 L 315,285 L 330,270" />
+      <path d="M 290,315 L 315,315 L 330,330" />
+      <path d="M 305,270 L 325,270 L 340,255" />
+      <path d="M 305,330 L 325,330 L 340,345" />
+      <circle cx="330" cy="270" r="4" fill="currentColor" />
+      <circle cx="330" cy="330" r="4" fill="currentColor" />
+      <circle cx="340" cy="255" r="3.5" fill="currentColor" />
+      <circle cx="340" cy="345" r="3.5" fill="currentColor" />
+
+      <!-- Bottom Corner Circuitry -->
+      <path d="M 400,422 L 400,390" />
+      <path d="M 385,410 L 385,385 L 370,370" />
+      <path d="M 415,410 L 415,385 L 430,370" />
+      <circle cx="370" cy="370" r="4" fill="currentColor" />
+      <circle cx="430" cy="370" r="4" fill="currentColor" />
+
+      <!-- Right Corner Circuitry -->
+      <path d="M 522,300 L 490,300" />
+      <path d="M 510,285 L 485,285 L 470,270" />
+      <path d="M 510,315 L 485,315 L 470,330" />
+      <circle cx="470" cy="270" r="4" fill="currentColor" />
+      <circle cx="470" cy="330" r="4" fill="currentColor" />
+    </g>
+
+    <g fill="currentColor" opacity="0.75">
+      <circle cx="400" cy="270" r="4.5" />
+      <circle cx="400" cy="330" r="4.5" />
+      <circle cx="370" cy="300" r="4.5" />
+      <circle cx="430" cy="300" r="4.5" />
+    </g>
+
+    <!-- 3. 3D VERIFICATION CHECKMARK (TICK) -->
+    <path d="M 330,295 L 398,368 L 545,160 L 525,150 L 395,335 L 348,285 Z" 
+          fill="currentColor" opacity="0.95" />
+
+    <!-- Trailing Energy Rays -->
+    <g stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9">
+      <line x1="535" y1="175" x2="555" y2="148" />
+      <line x1="525" y1="185" x2="542" y2="162" />
+    </g>
+  </g>
+
+  <!-- 4. TYPOGRAPHY SILHOUETTE -->
+  <g text-anchor="middle" fill="currentColor" opacity="0.95">
+    <text x="400" y="580" 
+          font-family="'Outfit', 'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" 
+          font-size="88" 
+          font-weight="900" 
+          letter-spacing="5">
+      SIDIGIMON
+    </text>
+
+    <text x="400" y="622" 
+          font-family="'Plus Jakarta Sans', Arial, sans-serif" 
+          font-size="14.5" 
+          font-weight="800" 
+          letter-spacing="2.8">
+      SISTEM DIGITALISASI BUKTI PEMBAYARAN DAN MONITORING
+    </text>
+
+    <text x="400" y="645" 
+          font-family="'Plus Jakarta Sans', Arial, sans-serif" 
+          font-size="14.5" 
+          font-weight="800" 
+          letter-spacing="3.5">
+      PENERIMAAN
+    </text>
+  </g>
+</svg>
